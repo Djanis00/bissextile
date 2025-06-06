@@ -39,5 +39,20 @@ public class BissextileTests
         Assert.False(result);
     }
 
+    [Fact]
+    public void Annee_2024_est_bissextile()
+    {
+        var result = DateUtils.IsBissextile(2024);
+        Assert.True(result);
+    }
+
+    [Fact]
+    public void Annee_1996_est_bissextile()
+    {
+        var result = DateUtils.IsBissextile(1996);
+        Assert.True(result);
+    }
+
+
 
 }
