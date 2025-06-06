@@ -16,7 +16,14 @@ namespace bissextile
     {
         public static bool IsBissextile(int annee)
         {
-            return annee % 400 == 0;
+           
+            if (annee % 400 == 0) return true;
+            if (annee % 100 == 0) return false;
+
+            return false; 
+            
         }
+
     }
 }
+

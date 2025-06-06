@@ -28,7 +28,7 @@ public class BissextileTests
     public void Annee_1700_est_non_bissextile()
     {
         var result = DateUtils.IsBissextile(1700);
-        Assert.True(result);
+        Assert.False(result);
     }
 
 
@@ -36,7 +36,7 @@ public class BissextileTests
     public void Annee_1900_est_non_bissextile()
     {
         var result = DateUtils.IsBissextile(1900);
-        Assert.True(result);
+        Assert.False(result);
     }
 
 
