@@ -53,6 +53,18 @@ public class BissextileTests
         Assert.True(result);
     }
 
+    [Fact]
+    public void Annee_2023_est_non_bissextile()
+    {
+        var result = DateUtils.IsBissextile(2023);
+        Assert.True(result);
+    }
 
+    [Fact]
+    public void Annee_2019_est_non_bissextile()
+    {
+        var result = DateUtils.IsBissextile(2019);
+        Assert.True(result);
+    }
 
 }
